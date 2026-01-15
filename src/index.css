@@ -6,41 +6,46 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 210 30% 15%;
+    --background: 45 30% 98%;
+    --foreground: 220 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 30% 15%;
+    --card-foreground: 220 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 30% 15%;
+    --popover-foreground: 220 30% 15%;
 
-    --primary: 174 62% 40%;
+    --primary: 185 70% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 30% 95%;
-    --secondary-foreground: 210 30% 15%;
+    --secondary: 40 60% 94%;
+    --secondary-foreground: 220 30% 15%;
 
-    --muted: 210 15% 94%;
-    --muted-foreground: 210 15% 45%;
+    --muted: 45 20% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 174 50% 92%;
-    --accent-foreground: 174 62% 25%;
+    --accent: 40 70% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 174 62% 40%;
+    --border: 40 25% 88%;
+    --input: 40 25% 88%;
+    --ring: 185 70% 42%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(174 62% 40% / 0.9) 0%, hsl(190 60% 35% / 0.85) 100%);
-    --card-shadow: 0 4px 20px -4px hsl(210 30% 15% / 0.08);
-    --card-shadow-hover: 0 12px 40px -8px hsl(174 62% 40% / 0.2);
-    --text-gradient: linear-gradient(135deg, hsl(174 62% 35%) 0%, hsl(190 60% 40%) 100%);
+    /* Custom tokens - Gold & Teal theme */
+    --gold: 40 70% 50%;
+    --gold-light: 40 65% 70%;
+    --teal: 185 70% 42%;
+    --teal-dark: 185 70% 32%;
+    
+    --hero-gradient: linear-gradient(135deg, hsl(185 70% 42% / 0.15) 0%, hsl(40 70% 50% / 0.1) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(220 30% 15% / 0.08);
+    --card-shadow-hover: 0 12px 40px -8px hsl(40 70% 50% / 0.25);
+    --text-gradient: linear-gradient(135deg, hsl(185 70% 38%) 0%, hsl(40 70% 50%) 100%);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -53,33 +58,33 @@
   }
 
   .dark {
-    --background: 210 30% 8%;
-    --foreground: 210 20% 95%;
+    --background: 220 30% 8%;
+    --foreground: 45 20% 95%;
 
-    --card: 210 25% 12%;
-    --card-foreground: 210 20% 95%;
+    --card: 220 25% 12%;
+    --card-foreground: 45 20% 95%;
 
-    --popover: 210 25% 12%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 45 20% 95%;
 
-    --primary: 174 55% 50%;
-    --primary-foreground: 210 30% 8%;
+    --primary: 185 65% 50%;
+    --primary-foreground: 220 30% 8%;
 
-    --secondary: 210 20% 18%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 45 20% 95%;
 
-    --muted: 210 20% 18%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 45 15% 60%;
 
-    --accent: 174 40% 20%;
-    --accent-foreground: 174 55% 70%;
+    --accent: 40 65% 55%;
+    --accent-foreground: 220 30% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 20%;
-    --input: 210 20% 20%;
-    --ring: 174 55% 50%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 185 65% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -117,6 +122,10 @@
 
   .hero-overlay {
     background: var(--hero-gradient);
+  }
+
+  .gold-accent {
+    color: hsl(var(--accent));
   }
 
   .card-elevated {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +19,19 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo with Brand Name */}
           <a href="#home" className="flex items-center gap-3">
             <img 
               src={logo} 
               alt="Truelimb - Easing Every Step" 
               className="h-14 w-auto object-contain"
             />
+            <div className="hidden sm:flex flex-col">
+              <span className="font-display font-bold text-xl tracking-tight text-foreground">
+                True<span className="text-primary">limb</span>
+              </span>
+              <span className="text-[10px] text-muted-foreground tracking-widest uppercase">Easing Every Step</span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
@@ -43,9 +49,9 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+911234567890" className="flex items-center gap-2 text-primary font-semibold">
+            <a href="tel:+919288511995" className="flex items-center gap-2 text-primary font-semibold">
               <Phone className="w-4 h-4" />
-              <span>+91 12345 67890</span>
+              <span>+91 9288511995</span>
             </a>
             <Button asChild>
               <a href="#contact">Book Consultation</a>
