@@ -38,7 +38,8 @@ const Hero = () => {
             At Truelimb, we combine cutting-edge technology with compassionate care to provide custom prosthetic and orthotic solutions that empower you to live life fully.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          {/* Primary CTA Buttons */}
+          <div className="flex flex-wrap gap-3 mb-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
               <a href="#services" className="gap-2">
                 Explore Our Services
@@ -48,36 +49,33 @@ const Hero = () => {
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
               <a href="#contact">Contact Us</a>
             </Button>
-            <Button size="lg" variant="outline" className="bg-accent/20 border-accent text-primary-foreground hover:bg-accent/30" asChild>
-              <a href="/brochure.jpeg" download="Truelimb-Brochure.jpeg" className="gap-2">
+          </div>
+
+          {/* Secondary Action */}
+          <div className="mb-10 animate-fade-up" style={{ animationDelay: "0.35s" }}>
+            <Button size="default" variant="ghost" className="text-primary-foreground/90 hover:text-primary-foreground hover:bg-primary-foreground/10 gap-2" asChild>
+              <a href="/brochure.jpeg" download="Truelimb-Brochure.jpeg">
                 <Download className="w-4 h-4" />
                 Download Brochure
               </a>
             </Button>
           </div>
 
-          {/* Quick Info Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <div className="flex items-center gap-3 bg-primary-foreground/15 backdrop-blur-sm rounded-lg p-4 border border-primary-foreground/10">
-              <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
-              <div>
-                <p className="text-primary-foreground/70 text-xs">Location</p>
-                <p className="text-primary-foreground text-sm font-medium">Ranchi, Jharkhand</p>
-              </div>
+          {/* Quick Info - Compact inline style */}
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-primary-foreground/80 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-accent" />
+              <span>Ranchi, Jharkhand</span>
             </div>
-            <div className="flex items-center gap-3 bg-primary-foreground/15 backdrop-blur-sm rounded-lg p-4 border border-primary-foreground/10">
-              <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-              <div>
-                <p className="text-primary-foreground/70 text-xs">Call Us</p>
-                <p className="text-primary-foreground text-sm font-medium">+91 9288511995</p>
-              </div>
+            <div className="hidden sm:block w-px h-4 bg-primary-foreground/30" />
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4 text-accent" />
+              <span>+91 9288511995</span>
             </div>
-            <div className="flex items-center gap-3 bg-primary-foreground/15 backdrop-blur-sm rounded-lg p-4 border border-primary-foreground/10">
-              <Clock className="w-5 h-5 text-accent flex-shrink-0" />
-              <div>
-                <p className="text-primary-foreground/70 text-xs">Working Hours</p>
-                <p className="text-primary-foreground text-sm font-medium">Mon - Sat: 10AM - 6:30PM</p>
-              </div>
+            <div className="hidden sm:block w-px h-4 bg-primary-foreground/30" />
+            <div className="flex items-center gap-2">
+              <Clock className="w-4 h-4 text-accent" />
+              <span>Mon - Sat: 10AM - 6:30PM</span>
             </div>
           </div>
         </div>
