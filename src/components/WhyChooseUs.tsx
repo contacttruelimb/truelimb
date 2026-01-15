@@ -1,28 +1,28 @@
 import { Award, Users, Clock, Heart } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "5000+", label: "Happy Patients" },
-  { icon: Award, value: "15+", label: "Years Experience" },
-  { icon: Clock, value: "24/7", label: "Support Available" },
-  { icon: Heart, value: "100%", label: "Care Commitment" },
+  { icon: Users, value: "1000+", label: "Patients Served" },
+  { icon: Award, value: "Certified", label: "P&O Professional" },
+  { icon: Clock, value: "Dedicated", label: "Follow-up Care" },
+  { icon: Heart, value: "Patient", label: "First Approach" },
 ];
 
 const reasons = [
   {
-    title: "Expert Team",
-    description: "Our certified prosthetists and orthotists bring decades of combined experience and continuous training in the latest technologies.",
+    title: "Certified Expertise",
+    description: "Led by a qualified Prosthetist & Orthotist with hands-on experience in fitting, fabrication, and patient rehabilitation.",
   },
   {
-    title: "Custom Solutions",
-    description: "Every device we create is tailored to your unique anatomy, lifestyle, and goals - because you deserve more than one-size-fits-all.",
+    title: "Personalized Care",
+    description: "Every patient is unique. We take time to understand your needs, lifestyle, and goals to create solutions that truly work for you.",
   },
   {
-    title: "Advanced Technology",
-    description: "We use 3D scanning, CAD/CAM design, and cutting-edge materials to deliver precise, comfortable, and durable solutions.",
+    title: "Quality Materials",
+    description: "We use high-quality, durable materials and modern techniques to ensure long-lasting comfort and reliable performance.",
   },
   {
-    title: "Compassionate Care",
-    description: "We understand the emotional journey of limb loss or mobility challenges. Our team provides support beyond just devices.",
+    title: "Ethical Practice",
+    description: "We believe in honest guidance without unnecessary recommendations. Your well-being is our priority, not sales.",
   },
 ];
 
@@ -46,13 +46,16 @@ const WhyChooseUs = () => {
         {/* Why Choose Us */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Why Choose Truelimb</span>
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">About Truelimb</span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
-              Your Partner in<br />
-              <span className="text-gradient">Mobility & Independence</span>
+              A Clinic Built on<br />
+              <span className="text-gradient">Care & Expertise</span>
             </h2>
+            <p className="text-muted-foreground text-lg mb-4">
+              Truelimb is a specialized Prosthetic & Orthotic clinic founded with a simple belief: every patient deserves personalized attention, honest guidance, and solutions that genuinely improve their quality of life.
+            </p>
             <p className="text-muted-foreground text-lg mb-8">
-              At Truelimb, we believe everyone deserves the freedom to move, work, play, and live without limitations. Our mission is to provide not just devices, but complete solutions that restore confidence and quality of life.
+              Run by a Certified Prosthetist & Orthotist, we combine clinical expertise with a patient-first approach. From the initial consultation to fitting and follow-up care, we walk with you through every step of your journey towards better mobility and independence.
             </p>
             <div className="flex items-center gap-4">
               <div className="flex -space-x-3">

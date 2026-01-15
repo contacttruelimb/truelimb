@@ -16,8 +16,8 @@ const Hero = () => {
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        {/* Translucent overlay with theme color */}
-        <div className="absolute inset-0 bg-primary/70" />
+        {/* Translucent overlay with theme color - 30% opacity for better video visibility */}
+        <div className="absolute inset-0 bg-primary/30" />
         <div className="absolute inset-0 hero-overlay" />
       </div>
 
