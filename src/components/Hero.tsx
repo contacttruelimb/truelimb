@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Phone, Clock } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Clock, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroVideo from "@/assets/hero-video.mp4";
 
@@ -6,18 +6,18 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Video */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-[0.85] origin-center"
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
         {/* Very light translucent overlay - 15% opacity for maximum video visibility */}
-        <div className="absolute inset-0 bg-gradient-to-br from-foreground/60 via-foreground/40 to-foreground/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-foreground/50 via-foreground/30 to-foreground/40" />
       </div>
 
       {/* Content */}
@@ -47,6 +47,12 @@ const Hero = () => {
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
               <a href="#contact">Contact Us</a>
+            </Button>
+            <Button size="lg" variant="outline" className="bg-accent/20 border-accent text-primary-foreground hover:bg-accent/30" asChild>
+              <a href="/brochure.jpeg" download="Truelimb-Brochure.jpeg" className="gap-2">
+                <Download className="w-4 h-4" />
+                Download Brochure
+              </a>
             </Button>
           </div>
 
