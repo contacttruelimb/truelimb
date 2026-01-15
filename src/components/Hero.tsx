@@ -1,17 +1,23 @@
 import { ArrowRight, MapPin, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-prosthetics.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Truelimb prosthetics clinic"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        {/* Translucent overlay with theme color */}
+        <div className="absolute inset-0 bg-primary/70" />
         <div className="absolute inset-0 hero-overlay" />
       </div>
 
