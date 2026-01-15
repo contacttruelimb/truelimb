@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-xl">T</span>
-            </div>
-            <span className="font-display font-bold text-2xl text-foreground">
-              True<span className="text-gradient">limb</span>
-            </span>
+          <a href="#home" className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="Truelimb - Easing Every Step" 
+              className="h-14 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Navigation */}
