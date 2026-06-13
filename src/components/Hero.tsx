@@ -15,17 +15,17 @@ const Hero = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-40 scale-[0.95] origin-center"
+          className="w-full h-full object-cover opacity-75 scale-[0.95] origin-center"
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        {/* Dark premium overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/85 via-slate-900/70 to-slate-950/85" />
+        {/* Subtle lightweight dark tint for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/40 via-slate-900/30 to-slate-950/40" />
         {/* Geometric grid pattern */}
         <div className="absolute inset-0 hero-grid-pattern" />
         {/* Glowing accents */}
-        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-accent/15 blur-3xl" />
+        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/15 blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-accent/10 blur-3xl" />
       </div>
 
       {/* Content */}
