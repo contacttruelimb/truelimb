@@ -4,6 +4,7 @@ import WhyTrueLimb from "@/components/WhyTrueLimb";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Contact from "@/components/Contact";
+import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileBottomBar from "@/components/MobileBottomBar";
@@ -17,6 +18,7 @@ const Index = () => {
         <WhyTrueLimb />
         <Services />
         <WhyChooseUs />
+        <Gallery />
         <Contact />
       </main>
       <Footer />
